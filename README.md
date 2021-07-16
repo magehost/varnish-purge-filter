@@ -28,6 +28,6 @@ php bin/magento setup:di:compile
 # Description #
 **This extension is free, licence: [MIT](https://github.com/magehost/varnish-purge-filter/blob/master/LICENSE).**
 
-During black friday, we noticed unnecessary pressure on some environments caused by too much purges.
-These purges are often caused by imports or shop admins changing thing last minute.
-Preventing the purges is often crucial for the health of your environment.
+During black friday, we noticed unnecessary pressure on some environments caused by too much purges.  
+These purges are often caused by imports or shop admins changing thing last minute.  
+Preventing the purges is often crucial for the health of your environment.  

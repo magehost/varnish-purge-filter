@@ -16,9 +16,9 @@
 
 namespace MageHost\VarnishPurgeFilter\Plugin;
 
-use \Psr\Log\LoggerInterface;
+use Psr\Log\LoggerInterface;
 use Magento\CacheInvalidate\Model\PurgeCache;
-use \Magento\Framework\App\Config\ScopeConfigInterface;
+use Magento\Framework\App\Config\ScopeConfigInterface;
 
 /**
  * Class PurgeCachePlugin

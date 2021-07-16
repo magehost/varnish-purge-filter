@@ -77,6 +77,10 @@ class PurgeCachePlugin
      */
     public function beforeSendPurgeRequest(PurgeCache $subject, $tags)
     {
+        if(!is_array($tags)) {
+            $tags = [$tags];
+        }
+        
         $tagsToFilter = [];
 
         foreach (self::PURGE_FILTERS_MAPPING as $key => $value) {

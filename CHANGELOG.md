@@ -1,3 +1,7 @@
+### 1.0.3 (2021-07-16)
+
+  * Fixes a bug in older Magento Versions
+  
 ### 1.0.2 (2021-07-16)
 
   * Bumped version for composer

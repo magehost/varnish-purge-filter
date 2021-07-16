@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="system">
+            <group id="full_page_cache">
+                <group id="varnish">
+                    <group id="purge_filters" translate="label" type="text" sortOrder="50" showInDefault="1">
+                        <label>Purge Filters</label>
+                        <depends>
+                            <field id="caching_application">1</field>
+                        </depends>
+                        <field id="products" translate="label" type="select" sortOrder="1" showInDefault="1">
+                            <label>Filter product purges</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                            <depends>
+                                <field id="caching_application">1</field>
+                            </depends>
+                        </field>
+                        <field id="categories" translate="label" type="select" sortOrder="2" showInDefault="1">
+                            <label>Filter category purges</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                            <depends>
+                                <field id="caching_application">1</field>
+                            </depends>
+                        </field>
+                        <field id="cms_blocks" translate="label" type="select" sortOrder="3" showInDefault="1">
+                            <label>Filter CMS blocks purges</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                            <depends>
+                                <field id="caching_application">1</field>
+                            </depends>
+                        </field>
+                        <field id="cms_pages" translate="label" type="select" sortOrder="4" showInDefault="1">
+                            <label>Filter CMS Pages purges</label>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                            <depends>
+                                <field id="caching_application">1</field>
+                            </depends>
+                        </field>
+                    </group>
+                </group>
+            </group>
+        </section>
+    </system>
+</config>

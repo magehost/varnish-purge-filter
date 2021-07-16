@@ -1,8 +1,8 @@
 Varnish Purge Filter Extension for Magento 2
 =====================
 
-The free Varnish Purge Filter Extension by [MageHost.pro](https://magehost.pro) adds an option to filter purges for specific tags.
-This extension is useful to prevent shop admins from busting the cache on important moments.
+The free Varnish Purge Filter Extension by [MageHost.pro](https://magehost.pro) adds an option to filter purges for specific tags.  
+This extension is useful to prevent shop admins and the application from busting the cache on important moments.
 
 # Install via Composer #
 

@@ -3,7 +3,7 @@
     "description": "Varnish purge filter for Magento 2.x by MageHost.pro",
     "homepage": "https://github.com/magehost/varnish-purge-filter",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minimum-stability": "beta",
     "license": "MIT",
     "authors":[

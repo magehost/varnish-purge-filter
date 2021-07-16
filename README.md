@@ -15,7 +15,7 @@ php bin/magento setup:di:compile
 
 # Usage #
 
-* In Admin go to *_Stores > Configuration > Advanced > System > Full Page Cache*.
+* In Admin go to *Stores > Configuration > Advanced > System > Full Page Cache*.
 
 # Uninstall #
 ```

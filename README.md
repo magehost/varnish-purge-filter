@@ -15,7 +15,7 @@ php bin/magento setup:di:compile
 
 # Usage #
 
-This extension only works when Varnish is enabled.
+> **WARNING**: This extension only works when Varnish is enabled.
 
 * Check if Varnish is enabled and configured in *Stores > Configuration > Advanced > System > Full Page Cache*.
 * Set the dropdown to *yes* for the tags that should not be flushed in *Stores > Configuration > Advanced > System > Full Page Cache > Varnish > Purge Filters*.

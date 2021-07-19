@@ -15,7 +15,12 @@ php bin/magento setup:di:compile
 
 # Usage #
 
-* In Admin go to *Stores > Configuration > Advanced > System > Full Page Cache*.
+This extension only works when Varnish is enabled.
+
+* Check if Varnish is enabled and configured in *Stores > Configuration > Advanced > System > Full Page Cache*.
+* Set the dropdown to *yes* for the tags that should not be flushed in *Stores > Configuration > Advanced > System > Full Page Cache > Varnish > Purge Filters*.
+
+![screenshot](https://raw.githubusercontent.com/magehost/varnish-purge-filter/master/doc/purgefilter_config.png)
 
 # Uninstall #
 ```

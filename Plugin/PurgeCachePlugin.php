@@ -41,19 +41,19 @@ class PurgeCachePlugin
     /**
      *
      */
-    const CONFIG_PATH_PURGES = 'system/full_page_cache/varnish/purge_filters';
+    const CONFIG_PATH_PURGES = 'system/full_page_cache/purge_filters';
 
 
     /**
      *
      */
     const PURGE_FILTERS_MAPPING
-        = [
-            'products'   => 'cat_p',
-            'categories' => 'cat_c',
-            'cms_blocks' => 'cms_b',
-            'cms_pages'  => 'cms_p',
-        ];
+    = [
+        'products'   => 'cat_p',
+        'categories' => 'cat_c',
+        'cms_blocks' => 'cms_b',
+        'cms_pages'  => 'cms_p',
+    ];
 
     /**
      * PurgeCachePlugin constructor.
@@ -77,25 +77,24 @@ class PurgeCachePlugin
      */
     public function beforeSendPurgeRequest(PurgeCache $subject, $tags)
     {
-        if(!is_array($tags)) {
+        if (!is_array($tags)) {
             $tags = [$tags];
         }
-        
+
         $tagsToFilter = [];
 
         foreach (self::PURGE_FILTERS_MAPPING as $key => $value) {
             if ($this->scopeConfig->getValue(
-                self::CONFIG_PATH_PURGES.'/'.$key,
+                self::CONFIG_PATH_PURGES . '/' . $key,
                 ScopeConfigInterface::SCOPE_TYPE_DEFAULT
-            )
-            ) {
+            )) {
                 $tagsToFilter[] = $value;
             }
         }
 
         if (count($tagsToFilter) > 0) {
             foreach ($tags as $key => $value) {
-                if (preg_match('/'.implode('|', $tagsToFilter).'/i', $value)) {
+                if (preg_match('/' . implode('|', $tagsToFilter) . '/i', $value)) {
                     unset($tags[$key]);
                 }
             }

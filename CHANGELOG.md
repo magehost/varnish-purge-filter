@@ -1,3 +1,7 @@
+### 1.0.4 (2021-08-16)
+
+  * Adds system.xml compatibility with the Fastly extension
+
 ### 1.0.3 (2021-07-16)
 
   * Fixes a bug in older Magento Versions
